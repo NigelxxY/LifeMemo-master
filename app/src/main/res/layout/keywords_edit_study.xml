@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="480dp"
+        android:background="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/keywords_study_edit_title"
+            android:layout_width="160dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Studying Key Words"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <ListView
+            android:id="@+id/keywords_study_list"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_below="@+id/keywords_study_edit_title"
+            android:layout_marginTop="10dp">
+
+        </ListView>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="#f17780"
+            android:text="Finish the Edit"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

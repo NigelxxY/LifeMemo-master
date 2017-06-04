@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LifeMemo</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string-array name="menu_array">
+        <item>DIARY</item>
+        <item>KEY WORDS</item>
+        <item>ANALYSIS</item>
+        <item>SETTING</item>
+    </string-array>
+    <string name="title_activity_keywords_edit">KeywordsEdit</string>
+
+</resources>

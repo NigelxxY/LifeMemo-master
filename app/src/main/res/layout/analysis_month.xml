@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4">
+
+    <RelativeLayout
+        android:id="@+id/title_bar_analysis_month"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fafafa">
+
+        <TextView
+            android:id="@+id/title_analysis_month"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="ANALYSIS"
+            android:textColor="#202020"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="12dp"
+            android:layout_below="@+id/title_analysis_month"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="update at Monday"
+            android:textColor="#818181"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/analysis_month_timelist"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/title_bar_analysis_month"
+        android:layout_marginTop="5dp"
+        android:background="#fafafa">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/analysis_month_time"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@+id/analysis_month_timelist"
+        android:layout_marginTop="5dp"
+        android:background="#fafafa">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:background="#f4f4f4">
+
+        </View>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#f4f4f4">
+
+        </View>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="SLEEP"
+            android:textColor="#202020"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="130dp"
+            android:gravity="center"
+            android:text="STUDY"
+            android:textColor="#202020"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="EAT"
+            android:textColor="#202020"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="130dp"
+            android:gravity="center"
+            android:text="BORING"
+            android:textColor="#202020"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp">
+            <RadioButton
+                android:id="@+id/button_week"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:background="@drawable/round_white"/>
+            <RadioButton
+                android:id="@+id/button_month"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:background="@drawable/round_white"/>
+    </RadioGroup>
+
+</RelativeLayout>

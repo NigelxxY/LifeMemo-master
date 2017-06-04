@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addText"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_marginTop="80dp">
+
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/square"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"></ImageView>
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="28dp"
+            android:background="#ececec"></View>
+
+        <TextView
+            android:id="@+id/event_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Begin Time:                                                          End Time:"
+            android:textColor="#181818"
+            android:textSize="9dp" />
+
+        <TextView
+            android:id="@+id/event_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="38dp"
+            android:gravity="center"
+            android:text="Events:"
+            android:textColor="#181818"
+            android:textSize="9dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="25dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="28dp"
+        android:background="#979797">
+    </View>
+
+    <ImageView
+        android:id="@+id/leftgrey"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/round_grey" />
+
+    <ImageView
+        android:id="@+id/rightpink"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/round" />
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec">
+
+    <RelativeLayout
+        android:id="@+id/title_bar_target"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f9f9f9"
+        >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:text="TARGET"
+            android:textSize="15dp"
+            android:textColor="#181818"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/target_1"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/title_bar_target"
+        android:layout_marginTop="5dp"
+        android:background="#f9f9f9">
+
+        <TextView
+            android:id="@+id/text_target_1"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:textColor="#181818"
+            android:text="TARGET 1"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/edit_target1"
+            android:layout_width="280dp"
+            android:layout_height="140dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="9dp"
+            android:layout_toRightOf="@+id/text_target_1"
+            android:hint="Write down your first target."
+            android:background="#ffffff"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/target_2"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/target_1"
+        android:layout_marginTop="5dp"
+        android:background="#f9f9f9">
+
+        <TextView
+            android:id="@+id/text_target_2"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:textColor="#181818"
+            android:text="TARGET 2"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/edit_target2"
+            android:layout_width="280dp"
+            android:layout_height="140dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="9dp"
+            android:layout_toRightOf="@+id/text_target_2"
+            android:hint="Write down your second target."
+            android:background="#ffffff"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/target_3"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/target_2"
+        android:layout_marginTop="5dp"
+        android:background="#f9f9f9">
+
+        <TextView
+            android:id="@+id/text_target_3"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:textColor="#181818"
+            android:text="TARGET 3"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/edit_target3"
+            android:layout_width="280dp"
+            android:layout_height="140dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="9dp"
+            android:layout_toRightOf="@+id/text_target_3"
+            android:hint="Write down your third target."
+            android:background="#ffffff"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_target_save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#de5f6c"
+        android:text="Finish"
+        android:textColor="#f9f9f9"/>
+
+
+
+</RelativeLayout>

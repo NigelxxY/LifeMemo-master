@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="135dp"
+        android:background="#ececec"
+        android:layout_centerHorizontal="true"
+        >
+
+
+
+        <EditText
+            android:id="@+id/keywords_edit"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:hint="Please enter 4~8 words."/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/keywords_edit_save"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="#de5f6c"
+                android:text="save"
+                android:textColor="#f9f9f9"/>
+
+            <Button
+                android:id="@+id/keywords_edit_cancel"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="#b5b5b5"
+                android:text="cancel"
+                android:textColor="#f9f9f9"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

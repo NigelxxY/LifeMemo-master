@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    >
+
+    <Spinner
+        android:id="@+id/pulldownlist"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editText_event"
+        android:layout_marginTop="1dp"
+        android:spinnerMode="dropdown"
+        android:dropDownWidth="360dp"
+        android:popupBackground="#f9f9f9"
+        android:background="@drawable/spinner"
+
+        >
+    </Spinner>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/editevent_finishbutton"
+        android:layout_marginBottom="20dp">
+
+        <RadioGroup
+            android:id="@+id/class_select_event"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/button_sleep"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:background="@drawable/sleep_icon"
+                    android:layout_marginRight="25dp"
+                    android:gravity="left"
+                    />
+
+            <RadioButton
+                android:id="@+id/button_work"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="25dp"
+                android:button="@null"
+                android:background="@drawable/study_icon"
+                android:gravity="left" />
+
+            <RadioButton
+                    android:id="@+id/button_meals"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:background="@drawable/eat_icon"
+                    android:gravity="center"/>
+
+                <RadioButton
+                    android:id="@+id/button_play"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:background="@drawable/boring_icon"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="right"/>
+
+                <RadioButton
+                    android:id="@+id/button_note"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:background="@drawable/notes_icon"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="right"
+                    />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/editevent_finishbutton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#de5f6c"
+        android:text="finish"
+        android:textColor="#f9f9f9"
+        android:layout_above="@+id/time_elect"
+        />
+
+    <RelativeLayout
+        android:id="@+id/time_elect"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f9f9f9">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="160dp"
+            android:id="@+id/relativeLayout">
+
+            <com.timerpicker.TimePicker
+                android:id="@+id/timepicker_hour"
+                android:layout_width="80dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/timepicker_hour_words"
+                android:layout_toRightOf="@+id/timepicker_hour"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="HOUR"
+                android:textColor="#6f6f6f"/>
+
+            <com.timerpicker.TimePicker
+                android:id="@+id/timepicker_minute"
+                android:layout_toRightOf="@+id/timepicker_hour_words"
+                android:layout_width="80dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/timepicker_minute_words"
+                android:layout_toRightOf="@+id/timepicker_minute"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="MINUTE"
+                android:textColor="#6f6f6f"/>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/event_et"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Ending Time"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/event_bt"
+            android:layout_below="@+id/relativeLayout"
+            android:background="#f9f9f9"/>
+        <Button
+            android:id="@+id/event_bt"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Beginning Time"
+            android:gravity="center"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentStart="true"
+            android:background="#f9f9f9"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/editText_event"
+        android:hint="Enter event."
+        android:gravity="top|left"
+        android:paddingTop="9dp"
+        android:paddingLeft="9dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="#f9f9f9"/>
+
+
+</RelativeLayout>
