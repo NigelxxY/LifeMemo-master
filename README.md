@@ -1,5 +1,5 @@
 # LifeMemo-master
-windows cant access to github ,so my girlfriend download the project and import it into an new android project
+windows cant access to github ,so my ex-girlfriend download the project and import it into an new android project
 
 Two East China University of Science and Technology students finished the project together in June 2017.
 This project is a simple but useful android app that help you to record what have you done.
